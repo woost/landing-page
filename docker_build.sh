@@ -2,4 +2,4 @@
 
 ./build.sh
 
-docker build -t wust2.landing:latest .
+docker build -t woost/wust2.landing:latest .
