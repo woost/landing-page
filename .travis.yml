@@ -1,11 +1,15 @@
-sudo:          false
-language:      node_js
-node_js:
-  - "node"
-install:       npm install
+sudo: false
+language: node_js
+node_js: 7
+
+branches:
+  only:
+  - master
+
 script:
-  - npm test
-  - gulp
+  - ./docker_build.sh
+after_success:
+  - ./docker_publish.sh
 cache:
   directories:
     - node_modules
