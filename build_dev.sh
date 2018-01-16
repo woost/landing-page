@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-npm install
+./build.sh
 node node_modules/gulp/bin/gulp.js dev
