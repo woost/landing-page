@@ -20,7 +20,7 @@ $pink:    #e83e8c;
 $red:     #dc3545;
 $orange:  #fd7e14;
 $yellow:  #ffc107;
-$green:   #28a745;
+$green:   #00CC96; //#28a745;
 $teal:    #20c997;
 $cyan:    #17a2b8;
 
@@ -51,11 +51,16 @@ $danger:        $red;
 $light:         $gray-100;
 $dark:          $gray-800;
 
+$font-family-sans-serif:      Raleway, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:            Raleway, $font-family-sans-serif;
+
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 
-$header-bg: #eff4ff;
-$header-fg: rgb(77, 77, 77);
+$header-bg: #2b5797; //#2d89ef;
+$header-fg: $white;
+$header-btn: #00CC96;
 
-$navbar-bg: #2d89ef;
+$navbar-bg: #323334;
 $navbar-fg: $white;

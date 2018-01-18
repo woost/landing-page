@@ -1,3 +1,7 @@
+.navbar {
+  @include navbar-font;
+}
+
 body {
   @include body-font;
 }
@@ -8,6 +12,6 @@ h3,
 h4,
 h5,
 h6 {
-  @include body-font;
+  @include headline-font;
   font-weight: 700;
 }

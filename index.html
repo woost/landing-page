@@ -13,7 +13,7 @@
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500|Ubuntu" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/landing-page.min.css" rel="stylesheet">
@@ -26,7 +26,11 @@
     <nav class="navbar fixed-top navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#">Woost</a>
-            <a class="text-uppercase" href="#Team">Team</a>
+            <div class="display:flex;">
+              <a class="text-uppercase" href="#Vision">Vision</a>
+              <span style="margin:0px 10px; color: #AAA;">|</span>
+              <a class="text-uppercase" href="#Team">Team</a>
+            </div>
             <!-- <a class="btn btn-primary" href="#">Sign In</a> -->
         </div>
     </nav>
@@ -35,30 +39,37 @@
     <header class="masthead text-center">
         <!-- <div class="overlay"></div> -->
         <div class="container">
-            <div class="row">
-                <div class="col-xl-9 mx-auto">
-                    <h1 class="mb-5">Woost minus zero = no limit</h1>
+          <div class="row">
+              <div class="col-md-7">
+                  <h1 class="mt-md-10" style="font-size:5em; font-family:Raleway">Woost</h1>
+                  <h2>A new Communication Paradigm</h1>
+              </div>
+              <div class="mt-sm-10 col-md-5 mx-auto" style="height: 400px; background: url(img/Hamiltonian_path_colored.svg) center no-repeat; background-size: contain"></div>
+          </div>
+          <div class="row">
+            <!-- Mail subscription -->
+            <div id="mc_embed_signup" class="mx-auto" style="margin-top:2rem;">
+              <form action="https://space.us17.list-manage.com/subscribe/post?u=ad16052dc566bc389885f99a9&amp;id=f230e56e16" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll" class="form-row">
+                  <div class="mc-field-group">
+                    <label class="sr-only" for="inlineFormInput">Email</label>
+                    <input class="form-control form-control-lg mb-2 mr-sm-2 mb-sm-0 required email" value="" name="EMAIL" placeholder="Get notified when it's ready" id="mce-EMAIL" type="email">
+
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ad16052dc566bc389885f99a9_f230e56e16" tabindex="-1" value=""></div>
+                    <input value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-lg btn-success" style="font-weight:bold" type="submit">
+
+
+                    <div id="mce-responses">
+                      <div class="response" id="mce-error-response" style="display:none"></div>
+                      <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+                    <div for="mce-EMAIL" class="mce_inline_error" style="display:none"></div>
+                  </div>
                 </div>
-                <!-- Mail subscription -->
-                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto" id="mc_embed_signup">
-                    <form action="https://space.us17.list-manage.com/subscribe/post?u=ad16052dc566bc389885f99a9&amp;id=f230e56e16" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                        <div id="mc_embed_signup_scroll" class="form-row">
-                            <div class="col-12 col-md-9 mb-2 mb-md-0 mc-field-group">
-                                <input type="email" value="" name="EMAIL" placeholder="Enter your email..." class="required email form-control form-control-lg" id="mce-EMAIL">
-                                <div id="mce-responses">
-                                    <div class="response" id="mce-error-response" style="display:none"></div>
-                                    <div class="response" id="mce-success-response" style="display:none"></div>
-                                </div>
-                                <div for="mce-EMAIL" class="mce_inline_error" style="position:absolute;display:none"></div>
-                            </div>
-                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ad16052dc566bc389885f99a9_f230e56e16" tabindex="-1" value=""></div>
-                            <div class="col-12 col-md-3">
-                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-block btn-lg btn-primary">
-                            </div>
-                        </div>
-                    </form>
-                </div>
+              </form>
             </div>
+
+          </div>
         </div>
     </header>
 
@@ -98,13 +109,14 @@
     <!-- </section> -->
 
     <!-- Image Showcases -->
+    <a name="Vision">
     <section class="showcase">
         <div class="container-fluid p-0">
             <div class="row no-gutters">
 
                 <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background: url('img/cube_distorted.svg') no-repeat center center; background-size:contain;"></div>
                 <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                    <h2>Fully Responsive Design</h2>
+                    <h2>A Universal Information Network</h2>
                     <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
                 </div>
             </div>
@@ -124,6 +136,7 @@
             </div>
         </div>
     </section>
+    </a>
 
     <!-- Team -->
     <a name="Team">
