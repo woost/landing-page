@@ -47,7 +47,7 @@ gulp.task('minify-css', ['sass'], function() {
 // NOTE: requires `npm install` before running!
 gulp.task('copy', function() {
   gulp.src([
-      'node_modules/bootstrap/dist/**/*',
+      'node_modules/bootstrap/dist/js/**/*',
       '!**/npm.js',
       '!**/bootstrap-theme.*',
       '!**/*.map'
