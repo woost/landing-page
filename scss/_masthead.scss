@@ -3,7 +3,7 @@ header.masthead {
   color: $header-fg;
   background-color: $header-bg;
   @include background-cover;
-  padding-top: 8rem;
+  //padding-top: 8rem;
   padding-bottom: 4rem;
   // .overlay {
   //   position: absolute;
@@ -22,6 +22,15 @@ header.masthead {
     //padding-bottom: 12rem;
     h1 {
       font-size: 3rem;
+    }
+  }
+
+  .header-graphic {
+    height: 200px;
+    @media (min-width: 768px) {
+      height: 400px;
+    }
+    @media (min-width: 576px) {
     }
   }
 }
