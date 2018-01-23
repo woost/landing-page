@@ -1,15 +1,3 @@
-.navbar-light {
-  background-color: $navbar-bg;
-  color: $navbar-fg;
-  a, a:hover {
-    color: $navbar-fg;
-    text-decoration: none;
-  }
-  .navbar-brand, .navbar-brand:hover, .navbar-brand:active, .navbar-brand:visited {
-    color: $navbar-fg;
-  }
-}
-
 #mc_embed_signup div.mce_inline_error {
   background-color: $red !important;
   position: absolute;
@@ -18,3 +6,4 @@
 #mc_embed_signup input.mce_inline_error {
   //border-color: $red !important;
 }
+

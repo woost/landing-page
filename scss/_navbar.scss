@@ -1,0 +1,23 @@
+.navbar {
+  @include navbar-font;
+}
+
+.navbar-light {
+  background-color: $navbar-bg;
+  color: $navbar-fg;
+  a, a:hover {
+    color: $navbar-fg;
+    text-decoration: none;
+  }
+  .navbar-brand, .navbar-brand:hover, .navbar-brand:active, .navbar-brand:visited {
+    color: $navbar-fg;
+  }
+}
+
+// shift anchors up, because of fixed navbar
+a[name] {
+    display: block;
+    position: relative;
+    top: -56px; // height of the navbar
+    visibility: hidden;
+}
