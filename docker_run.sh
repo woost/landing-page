@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-docker run -d -p 80:80 wust2.landing
+docker run -d -p 80:80 landing

@@ -6,4 +6,4 @@ set -e
 docker images
 docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
 
-docker push woost/wust2.landing
+docker push woost/landing
