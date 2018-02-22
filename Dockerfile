@@ -1,6 +1,6 @@
 FROM nginx:1.13.7-alpine
 
-expose 80
+expose 8080
 
 copy ./nginx/default.conf /etc/nginx/conf.d/default.conf
 copy ./index.html /public/
