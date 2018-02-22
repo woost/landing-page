@@ -7,3 +7,4 @@ copy ./index.html /public/
 copy ./img /public/img
 copy ./vendor /public/vendor
 copy ./css /public/css
+copy ./static /public/static
