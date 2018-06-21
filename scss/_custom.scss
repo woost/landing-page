@@ -3,10 +3,12 @@
   color: #888888;
   margin-bottom: 1rem;
 }
-html, body {
-  height: 100%;
+html {
+  height: "100%";
 }
-
+body {
+  height: auto;
+}
 .masthead {
   height: 100%;
 }
