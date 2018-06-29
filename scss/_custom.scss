@@ -9,3 +9,18 @@ html,body {
 .masthead {
   height: 100%;
 }
+
+
+/* styling mailtrain iframe */
+.mj-container {
+    background: #2b5797 !important;
+}
+.mj-container .form-title {
+    display: none;
+}
+.mj-container input {
+    color: white !important;
+}
+.mj-container label {
+    color: white !important;
+}
