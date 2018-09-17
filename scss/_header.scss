@@ -1,31 +1,9 @@
 header.masthead {
-  position: relative;
   color: $header-fg;
-  background-color: $header-bg;
+  // background-color: $header-bg;
 
-
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2b5797+0,1f3e84+100 */
-// background: rgb(43,87,151); /* Old browsers */
-// background: -moz-linear-gradient(top, rgb(43,87,151) 0%, rgb(31,62,132) 100%); /* FF3.6-15 */
-// background: -webkit-linear-gradient(top, rgb(43,87,151) 0%,rgb(31,62,132) 100%); /* Chrome10-25,Safari5.1-6 */
-// background: linear-gradient(to bottom, rgb(43,87,151) 0%,rgb(31,62,132) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b5797', endColorstr='#1f3e84',GradientType=0 ); /* IE6-9 */
-
-
-
-
-  @include background-cover;
-  //padding-top: 8rem;
   padding-bottom: 4rem;
-  // .overlay {
-  //   position: absolute;
-  //   background-color: $gray-900;
-  //   height: 100%;
-  //   width: 100%;
-  //   top: 0;
-  //   left: 0;
-  //   opacity: 0.3;
-  // }
+
   h1 {
     font-size: 2rem;
   }
@@ -38,11 +16,13 @@ header.masthead {
   }
 
   .header-graphic {
-    height: 200px;
-    @media (min-width: 768px) {
-      height: 400px;
-    }
-    @media (min-width: 576px) {
-    }
+    height: 250px;
   }
 }
+
+// * {
+//     border: 1px solid powderblue;
+// }
+// *:hover {
+//     border: 1px solid steelblue;
+// }

@@ -75,9 +75,9 @@ $spacers: (
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 
-$header-bg: #2b5797; //#2d89ef;
-$body-bg: #2b5797; //#2d89ef;
-$header-fg: $white;
+$header-bg: white; //#2d89ef;
+$body-bg: white;
+$header-fg: #333;
 $header-btn: #00CC96;
 
 $navbar-bg: #323334;

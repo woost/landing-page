@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg169"
+   version="1.1"
+   viewBox="0 0 78 75"
+   height="75mm"
+   width="78mm"
+   sodipodi:docname="woost_logo_thin_bg_line.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="956"
+     inkscape:window-height="1176"
+     id="namedview1320"
+     showgrid="false"
+     inkscape:zoom="10.908974"
+     inkscape:cx="96.436665"
+     inkscape:cy="214.11981"
+     inkscape:window-x="0"
+     inkscape:window-y="20"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg169" />
+  <defs
+     id="defs163" />
+  <metadata
+     id="metadata166">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:none;fill-opacity:1;stroke:#586677;stroke-width:0.05185832;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.13389121;paint-order:markers fill stroke"
+     id="path4514-2-3-5-93"
+     d="m 38.999997,19.592448 c 63.223383,10e-7 -5.209705,-49.719546 14.327391,10.409459 19.5371,60.129005 45.67621,-20.318909 -5.47258,16.842859 -51.148784,37.161766 33.43916,37.161766 -17.709626,-10e-7 C -21.003604,9.682995 5.135506,90.130912 24.672606,30.001906 44.209705,-30.127098 -24.22338,19.592446 38.999997,19.592448 Z"
+     clip-path="none"
+     mask="none" />
+</svg>
