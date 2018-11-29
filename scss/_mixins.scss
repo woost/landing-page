@@ -4,9 +4,16 @@
 }
 
 @mixin headline-font {
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Questrial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 @mixin body-font {
   font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+// text-selection
+@mixin selection {
+    ::-moz-selection { @content; }
+    ::selection { @content; }
+}
+

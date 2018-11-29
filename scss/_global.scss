@@ -1,3 +1,37 @@
+// html:active {
+//      * :not(button) {
+//          box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1);
+//          background-color: rgba(0,0,0,0.05);
+//      }
+//      div {
+//          box-shadow: 0px 0px 0px 1px steelblue;
+//          background-color: rgba(steelblue,0.05);
+//      }
+//      .row {
+//          box-shadow: 0px 0px 0px 2px mediumseagreen;
+//          background-color: rgba(mediumseagreen,0.05);
+//      }
+//      section {
+//          box-shadow: 0px 0px 0px 2px gold;
+//          background-color: rgba(gold,0.05);
+//      }
+//      .container {
+//          box-shadow: 0px 0px 0px 2px pink;
+//          background-color: rgba(pink,0.05);
+//      }
+// }
+
+
+
+
+@include selection {
+    color: white;
+    // background: $woost-color;
+    background: #7F52CB;
+}
+
+
+
 body {
   @include body-font;
 }
@@ -12,28 +46,144 @@ h6 {
   font-weight: 700;
 }
 
-hr.line {
-    border-top: dashed 4px red;
-    margin: 50px 80px;
+
+.team-title {
+  font-weight: bold;
+  color: #888888;
+  margin-bottom: 1rem;
+}
+body {
+  background-color: $body-bg;
 }
 
-hr.line.teal {
-    border-color: #3DCFA2; 
+
+
+
+.navbar {
+  @include navbar-font;
 }
 
-hr.line.purple {
-    border-color: #86B9FF; 
+.navbar-light {
+  background-color: $navbar-bg;
+  color: $navbar-fg;
+  a, a:hover {
+    color: $navbar-fg;
+    text-decoration: none;
+  }
+  .navbar-brand, .navbar-brand:hover, .navbar-brand:active, .navbar-brand:visited {
+    color: $navbar-fg;
+  }
 }
 
-hr.line.pink {
-    border-color: #FF97D6; 
+// shift anchors up, because of fixed navbar
+a[name] {
+    display: block;
+    position: relative;
+    top: -56px; // height of the navbar
+    visibility: hidden;
 }
 
-hr.line.green {
-    border-color: #70CC86; 
+
+
+
+header.masthead {
+  color: $header-fg;
+  // background-color: $header-bg;
+
+  padding-bottom: 4rem;
+
+  h1 {
+    font-size: 2rem;
+  }
+  @media (min-width: 768px) {
+    // padding-top: 12rem;
+    //padding-bottom: 12rem;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .header-graphic {
+    height: 250px;
+  }
 }
 
-hr.line.blue {
-    border-color: #00C6FF
+
+
+
+.showcase {
+  .showcase-text {
+    padding: 3rem;
+  }
+  .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+    background-position: center;
+  }
+  @media (min-width: 768px) {
+    .showcase-text {
+      padding: 7rem;
+    }
+  }
 }
 
+
+.team {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  .testimonial-item {
+    max-width: 18rem;
+    img {
+      max-width: 12rem;
+      box-shadow: 0px 5px 5px 0px $gray-500;
+    }
+  }
+}
+
+.call-to-action {
+  position: relative;
+  background-color: $gray-800;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  .overlay {
+    position: absolute;
+    background-color: $gray-900;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+}
+
+
+
+
+
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  .features-icons-item {
+    max-width: 20rem;
+    .features-icons-icon {
+      height: 7rem;
+      i {
+        font-size: 4.5rem;
+      }
+    }
+    &:hover {
+      .features-icons-icon {
+        i {
+          font-size: 5rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+footer.footer {
+}

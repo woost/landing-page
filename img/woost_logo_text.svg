@@ -1,19 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   id="svg4382"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="40.43782mm"
+   height="53.289013mm"
+   viewBox="0 0 40.43782 53.289013"
    version="1.1"
-   viewBox="0 0 50 65"
-   height="65mm"
-   width="50mm">
+   id="svg4570"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="logo_text.svg">
   <defs
-     id="defs4376" />
+     id="defs4564" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="90.229293"
+     inkscape:cy="53.177855"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1180"
+     inkscape:window-x="0"
+     inkscape:window-y="20"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
-     id="metadata4379">
+     id="metadata4567">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -25,25 +53,39 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-8.9018685,-8.3272841)"
-     id="layer1">
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-84.781089,-79.197491)">
     <g
-       id="g4362"
-       transform="matrix(2.4047225,0,0,2.4047225,-126.73836,-598.36066)">
+       id="g5166">
       <path
-         style="fill:#6839ba;fill-opacity:1;stroke-width:0.17229033"
-         id="path4514-2-3-5-93-4"
-         d="m 66.710266,257.00527 c 15.370033,0 -1.266515,-12.08716 3.483086,2.53061 4.749601,14.61777 11.104197,-4.93967 -1.33042,4.09461 -12.434618,9.03428 8.129286,9.03428 -4.305332,0 -12.434617,-9.03428 -6.080022,10.52316 -1.33042,-4.09461 4.749602,-14.61777 -11.886946,-2.53061 3.483086,-2.53061 z" />
+         inkscape:transform-center-y="-0.34973902"
+         d="m 105,89.302082 c 33.08622,0 -2.72636,-26.019357 7.49785,5.447504 10.2242,31.466864 23.90338,-10.633342 -2.86393,8.814244 -26.767307,19.44759 17.49947,19.44759 -9.26784,0 C 73.598767,84.116242 87.277951,126.21645 97.502154,94.749585 107.72636,63.282725 71.913785,89.302081 105,89.302082 Z"
+         inkscape:randomized="0"
+         inkscape:rounded="3.57"
+         inkscape:flatsided="true"
+         sodipodi:arg2="-0.9424778"
+         sodipodi:arg1="-1.5707963"
+         sodipodi:r2="6.3780479"
+         sodipodi:r1="7.8837018"
+         sodipodi:cy="97.185783"
+         sodipodi:cx="105"
+         sodipodi:sides="5"
+         id="path4514-2-3-5-93-4-6"
+         style="fill:#6839ba;fill-opacity:1;stroke-width:0.3708798"
+         sodipodi:type="star" />
       <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:6.87738943px;line-height:1.25;font-family:Raleway;-inkscape-font-specification:'Raleway Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.17193471"
-         x="56.403961"
-         y="279.23056"
-         id="text6775-1"><tspan
+         id="text6775-1"
+         y="132.39043"
+         x="90.47403"
+         style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:9.60766697px;line-height:1.25;font-family:Raleway;-inkscape-font-specification:'Raleway Medium';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.24019162"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Raleway;-inkscape-font-specification:'Raleway Medium';stroke-width:0.24019162"
+           y="132.39043"
+           x="90.47403"
            id="tspan6773-2"
-           x="56.403961"
-           y="279.23056"
-           style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-family:Raleway;-inkscape-font-specification:'Raleway Medium';stroke-width:0.17193471">Woost</tspan></text>
+           sodipodi:role="line">Woost</tspan></text>
     </g>
   </g>
 </svg>
