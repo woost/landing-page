@@ -7,7 +7,34 @@
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-PC8Q93B');</script>
+    })(window,document,'script','dataLayer','GTM-PC8Q93B');
+    // https://developers.google.com/analytics/devguides/collection/analyticsjs/sending-hits#knowing_when_the_hit_has_been_sent
+    function createFunctionWithTimeout(callback, opt_timeout) {
+        var called = false;
+        function fn() {
+            if (!called) {
+                called = true;
+                callback();
+            }
+        }
+        setTimeout(fn, opt_timeout || 1000);
+        return fn;
+    }
+    function sendEvent(category, action, label, value, fieldsObject) {
+        if ("ga" in window) {
+            tracker = ga.getAll()[0];
+            if (tracker)
+                tracker.send("event", category, action, label, value, fieldsObject);
+        }
+    }
+    function openApp(label) {
+        sendEvent('app', 'open', label, {
+            hitCallback: createFunctionWithTimeout(function() {
+                location.href = "https://app.woost.space";
+            })
+        })
+    }
+    </script>
     <!-- End Google Tag Manager -->
 
     <meta charset="utf-8">
@@ -65,7 +92,7 @@
                   <h2>Too Many Tools with Specialized Workflows? Take Back Your Control.</h1>
                   <p>
                       Woost is a collaboration tool that aims to be simpler and more powerful thanks to a new structuring paradigm. 
-                      <a href="#technical-details" onclick="ga('send', 'event', 'anchor', 'click', 'technical-details');">Learn about the technical details.</a>
+                      <a href="#technical-details" onclick="sendEvent('anchor', 'click', 'technical-details');">Learn about the technical details.</a>
                   </p>
                   <p>
                       It supports basic features like chats, tasks and kanban boards, but is not limited to static or predefined workflows.
@@ -79,7 +106,7 @@
               </div>
           </div>
           <div class="row mt-md-5">
-              <button type="submit" class="btn mx-auto btn-lg btn-primary" onclick="ga('send', 'event', 'app', 'open', 'header');location.href = 'https://app.woost.space'">Try Without Registration</button>
+              <button type="submit" class="btn mx-auto btn-lg btn-primary" onclick="openApp('header')">Try Without Registration</button>
           </div>
         </div>
     </header>
@@ -151,7 +178,7 @@
                 </div>
             </div>
             <div class="row mt-md-5 my-sm-5">
-                <button type="submit" class="btn mx-auto btn-lg btn-primary" onclick="ga('send', 'event', 'app', 'open', 'commonworkflows');location.href = 'https://app.woost.space'">Try Without Registration</button>
+                <button type="submit" class="btn mx-auto btn-lg btn-primary" onclick="openApp('commonworkflows')">Try Without Registration</button>
             </div>
         </div>
     </section>
@@ -213,7 +240,7 @@ This allows to <b>combine different concepts arbitrarily to create individual wo
             </p>
             <div>
             <div class="row mt-md-5 my-sm-5">
-                <button type="submit" class="btn mx-auto btn-lg btn-primary" onclick="ga('send', 'event', 'app', 'open', 'technical-details');location.href = 'https://app.woost.space'">Try Without Registration</button>
+                <button type="submit" class="btn mx-auto btn-lg btn-primary" onclick="openApp('techdetails')">Try Without Registration</button>
             </div>
         </div>
     </section>
