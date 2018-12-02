@@ -12,6 +12,5 @@ script:
   - ./docker_build.sh
 after_success:
   - ./docker_publish.sh
-# cache:
-  # directories:
-    # - node_modules
+
+cache: npm
