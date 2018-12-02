@@ -4,4 +4,6 @@
 ./build.sh
 
 git_sha="$(git rev-parse --short HEAD)"
-docker build -t woost/landing:$git_sha -t woost/landing:latest .
+
+docker pull woost/landing:latest
+docker build --cache-from woost/landing:latest --tag woost/landing:$git_sha --tag woost/landing:latest .
