@@ -38,6 +38,8 @@
     "gulp-clean-css": "3.9.0",
     "gulp-header": "1.8.9",
     "gulp-rename": "^1.4.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-rewrite": "^1.1.3",
     "gulp-sass": "^3.2.1"
   }
 }

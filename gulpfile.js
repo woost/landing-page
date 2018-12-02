@@ -5,6 +5,8 @@ var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var pkg = require('./package.json');
+const rev = require('gulp-rev');
+const revRewrite = require('gulp-rev-rewrite');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -81,8 +83,23 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('vendor/simple-line-icons/css'))
 })
 
+gulp.task('rev', () => {
+    // add hash to css filenames
+    gulp.src('css/*.css')
+        .pipe(rev())
+        .pipe(rev.manifest())
+        .pipe(gulp.dest('css'))
+
+    // replace hashed filenames in other files
+    const cssRenameManifest = gulp.src('css/rev-manifest.json')
+    gulp.src('index.html', {base: "./"}) // base allows to overwrite file
+        .pipe(revRewrite({manifest: cssRenameManifest}))
+        .pipe(gulp.dest('./'))
+
+})
+
 // Default task
-gulp.task('default', ['sass', 'minify-css', 'copy']);
+gulp.task('default', ['sass', 'minify-css', 'copy', 'rev']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
