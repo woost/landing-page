@@ -12,8 +12,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Woost - The collaboration tool that scales with you">
+    <meta name="author" content="Woost">
 
     <title>Woost</title>
 
@@ -26,7 +26,14 @@
 
     <link href="/css/landing-page.min.css" rel="stylesheet">
 
-
+    <!--
+        https://css-tricks.com/essential-meta-tags-social-media 
+        http://ogp.me/
+    //-->
+    <meta property="og:title" content="Woost">
+    <meta property="og:site_name" content="Woost">
+    <meta property="og:description" content="The collaboration tool that scales with you.">
+    <meta property="og:url" content="https://woost.space">
 </head>
 
 <body>
@@ -58,7 +65,7 @@
                   <h2>Too Many Tools with Specialized Workflows? Take Back Your Control.</h1>
                   <p>
                       Woost is a collaboration tool that aims to be simpler and more powerful thanks to a new structuring paradigm. 
-                      <a href="#technical-details">Learn about the technical details.</a>
+                      <a href="#technical-details" onclick="ga('send', 'event', 'anchor', 'click', 'technical-details');">Learn about the technical details.</a>
                   </p>
                   <p>
                       It supports basic features like chats, tasks and kanban boards, but is not limited to static or predefined workflows.
@@ -72,7 +79,7 @@
               </div>
           </div>
           <div class="row mt-md-5">
-              <button type="submit" class="btn mx-auto btn-lg btn-primary" onclick="location.href = 'https://app.woost.space'">Try Without Registration</button>
+              <button type="submit" class="btn mx-auto btn-lg btn-primary" onclick="ga('send', 'event', 'app', 'open', 'header');location.href = 'https://app.woost.space'">Try Without Registration</button>
           </div>
         </div>
     </header>
@@ -144,7 +151,7 @@
                 </div>
             </div>
             <div class="row mt-md-5 my-sm-5">
-                <button type="submit" class="btn mx-auto btn-lg btn-primary" onclick="location.href = 'https://app.woost.space'">Try Without Registration</button>
+                <button type="submit" class="btn mx-auto btn-lg btn-primary" onclick="ga('send', 'event', 'app', 'open', 'commonworkflows');location.href = 'https://app.woost.space'">Try Without Registration</button>
             </div>
         </div>
     </section>
@@ -206,7 +213,7 @@ This allows to <b>combine different concepts arbitrarily to create individual wo
             </p>
             <div>
             <div class="row mt-md-5 my-sm-5">
-                <button type="submit" class="btn mx-auto btn-lg btn-primary" onclick="location.href = 'https://app.woost.space'">Try Without Registration</button>
+                <button type="submit" class="btn mx-auto btn-lg btn-primary" onclick="ga('send', 'event', 'app', 'open', 'technical-details');location.href = 'https://app.woost.space'">Try Without Registration</button>
             </div>
         </div>
     </section>
