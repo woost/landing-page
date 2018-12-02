@@ -83,7 +83,7 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('vendor/simple-line-icons/css'))
 })
 
-gulp.task('rev', () => {
+gulp.task('rev', function () {
     // add hash to css filenames
     gulp.src('css/*.css')
         .pipe(rev())
