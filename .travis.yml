@@ -13,4 +13,6 @@ script:
 after_success:
   - ./docker_publish.sh
 
-cache: npm
+cache:
+    - node_modules
+    - $HOME/.npm
