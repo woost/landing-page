@@ -34,6 +34,7 @@
 
 body {
   @include body-font;
+  background-color: $body-bg;
 }
 
 h1,
@@ -47,16 +48,13 @@ h6 {
 }
 
 
+
+
 .team-title {
   font-weight: bold;
   color: #888888;
   margin-bottom: 1rem;
 }
-body {
-  background-color: $body-bg;
-}
-
-
 
 
 .navbar {
@@ -85,52 +83,7 @@ a[name] {
 
 
 
-
-header.masthead {
-  color: $header-fg;
-  // background-color: $header-bg;
-
-  padding-bottom: 4rem;
-
-  h1 {
-    font-size: 2rem;
-  }
-  @media (min-width: 768px) {
-    // padding-top: 12rem;
-    //padding-bottom: 12rem;
-    h1 {
-      font-size: 3rem;
-    }
-  }
-
-  .header-graphic {
-    height: 250px;
-  }
-}
-
-
-
-
-.showcase {
-  .showcase-text {
-    padding: 3rem;
-  }
-  .showcase-img {
-    min-height: 30rem;
-    background-size: cover;
-    background-position: center;
-  }
-  @media (min-width: 768px) {
-    .showcase-text {
-      padding: 7rem;
-    }
-  }
-}
-
-
 .team {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
   .testimonial-item {
     max-width: 18rem;
     img {
@@ -140,50 +93,4 @@ header.masthead {
   }
 }
 
-.call-to-action {
-  position: relative;
-  background-color: $gray-800;
-  background-size: cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-  .overlay {
-    position: absolute;
-    background-color: $gray-900;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0.3;
-  }
-}
 
-
-
-
-
-.features-icons {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-  .features-icons-item {
-    max-width: 20rem;
-    .features-icons-icon {
-      height: 7rem;
-      i {
-        font-size: 4.5rem;
-      }
-    }
-    &:hover {
-      .features-icons-icon {
-        i {
-          font-size: 5rem;
-        }
-      }
-    }
-  }
-}
-
-
-
-
-footer.footer {
-}

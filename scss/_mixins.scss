@@ -1,14 +1,14 @@
 // Font Mixins
 @mixin navbar-font {
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 @mixin headline-font {
-  font-family: 'Questrial', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 @mixin body-font {
-  font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 // text-selection

@@ -47,9 +47,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
 
     <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:500|Ubuntu" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <link href="/css/landing-page.min.css" rel="stylesheet">
 
@@ -84,34 +82,42 @@
     <!-- </nav> -->
 
     <!-- Masthead -->
-    <header class="masthead container-fluid">
+    <header class="container-fluid">
         <!-- <div class="overlay"></div> -->
         <div class="container">
           <div class="row mt-lg-10 mt-md-7 mt-sm-4 mt-4 justify-content-center">
               <div class="col-md-7 align-self-end">
-                  <h2>Too Many Tools with Specialized Workflows? Take Back Your Control.</h1>
+                  <h2>Too Many Tools with Specialized Workflows? Take Back Control.</h1>
                   <p>
                       Woost is a collaboration tool that aims to be simpler and more powerful thanks to a new structuring paradigm. 
                       <a href="#technical-details" onclick="sendEvent('anchor', 'click', 'technical-details');">Learn about the technical details.</a>
                   </p>
                   <p>
-                      It supports basic features like chats, tasks and kanban boards, but is not limited to static or predefined workflows.
-                  </p>
-                  <p>
                       Think: <b>The flexibility of Excel meets collaboration and communication.</b>
                   </p>
+                  <p>
+                      Woost is a simple alternative to: Excel and E-Mail. Slack and Trello.
+                  </p>
+                  <p>
+                      It supports basic features like chats, tasks and kanban boards, but is not limited to static or predefined workflows.
+                  </p>
               </div>
-              <div class="col-md-5 col-sm-4 col-3">
-                  <div class="header-graphic" style="background: white url(img/woost_logo_text.svg) center no-repeat; background-size: contain"></div>
+              <div class="col-md-5 col-sm-5 my-5">
+                  <div style="height: 250px; background: white url(img/woost_logo_text.svg) center no-repeat; background-size: contain"></div>
               </div>
           </div>
           <div class="row mt-md-5">
               <button type="submit" class="btn mx-auto btn-lg btn-primary" onclick="openApp('header')">Try Without Registration</button>
           </div>
+
+          <div class="row">
+              <div class="col-md-8 mx-auto" style="height: 200px; background: url(img/exist-logos.svg) center no-repeat; background-size: contain"></div>
+          </div>
+
         </div>
     </header>
 
-    <section class="mt-md-10">
+    <section class="mt-md-10 mt-8">
         <div class="container">
             <h1 class="mb-5 text-center">A Tool That Scales with You</h1>
             <div class="row">
@@ -156,7 +162,7 @@
         </div>
     </section>
 
-    <section class="mt-md-10">
+    <section class="mt-md-10 mt-8">
         <div class="container">
             <h1 class="mb-5 text-center">Common Workflows - Adapted to Your Needs</h1>
             <div class="row">
@@ -174,17 +180,17 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h2>Thanks to its simplicity, Woost is easy to learn. This lowers the cost of setup and onboarding.</h2>
+                    <h3>Thanks to its simplicity, Woost is easy to learn. This lowers the cost of setup and onboarding.</h3>
                 </div>
             </div>
-            <div class="row mt-md-5 my-sm-5">
+            <div class="row mt-md-5 my-5">
                 <button type="submit" class="btn mx-auto btn-lg btn-primary" onclick="openApp('commonworkflows')">Try Without Registration</button>
             </div>
         </div>
     </section>
 
     <!-- Pricing -->
-    <section class="mt-md-10">
+    <section class="mt-md-10 mt-8">
         <div class="container">
             <h1 class="mb-5 text-center">Pricing</h1>
             <h5 class="text-center">We are currently in Beta stage. Please contact us, we'd love to hear from you. <a href="mailto:team@woost.space">team@woost.space</a></h5>
@@ -192,16 +198,16 @@
     </section>
 
     <!-- Newsletter -->
-    <section class="mt-md-10">
+    <section class="mt-md-10 mt-8">
         <div class="container text-center">
             <h1 class="mt-5">Receive News About Woost</h2>
-            <iframe src="https://mail.woost.space/subscription/H1hIbHmRf" scrolling="no" width=500 height=350 frameBorder="0"></iframe>
+            <iframe src="https://mail.woost.space/subscription/H1hIbHmRf" scrolling="no" width=100% height=350 frameBorder="0"></iframe>
         </div>
     </section>
 
 
     <!-- Vision -->
-    <section class="mt-md-10">
+    <section class="mt-md-10 mt-8">
         <div class="container">
             <h1 class="mb-5 text-center">Our Vision</h1>
             <div class="col-md-8 mx-auto">
@@ -222,7 +228,7 @@
 
     <!-- Technical Details -->
     <a name="technical-details"></a>
-    <section class="mt-md-10">
+    <section class="mt-md-10 mt-8">
         <div class="container">
             <h1 class="mb-5 text-center">Technical Details</h1>
             <div class="col-md-8 mx-auto">
@@ -239,7 +245,7 @@ This allows to <b>combine different concepts arbitrarily to create individual wo
                 To structure information in the graph, we fused the concepts of folder-hierarchies and tagging to eliminate both of their trade-offs. It can be understood as <b>"One file can live in multiple folders"</b>.
             </p>
             <div>
-            <div class="row mt-md-5 my-sm-5">
+            <div class="row my-5">
                 <button type="submit" class="btn mx-auto btn-lg btn-primary" onclick="openApp('techdetails')">Try Without Registration</button>
             </div>
         </div>
@@ -247,7 +253,7 @@ This allows to <b>combine different concepts arbitrarily to create individual wo
 
     <!-- Team -->
     <a name="Team"></a>
-    <section class="team text-center">
+    <section class="mt-md-10 mt-8 team text-center">
         <div class="container">
             <h1 class="mb-5">Team</h1>
             <div class="row">
@@ -276,16 +282,15 @@ This allows to <b>combine different concepts arbitrarily to create individual wo
                     </div>
                 </div>
             </div>
+            <h5 class="mt-5 text-center">Questions? Ideas? Please drop us a line, we'd love to talk to you. <a href="mailto:team@woost.space">team@woost.space</a></h5>
         </div>
-        <h5 class="mt-5 text-center">Questions? Ideas? Please drop us a line, we'd love to talk to you. <a href="mailto:team@woost.space">team@woost.space</a></h5>
     </section>
 
 
-    <div class="row">
-        <div class="col-md-8 mx-auto" style="height: 200px; background: white url(img/exist-logos.svg) center no-repeat; background-size: contain"></div>
-    </div>
-
     <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-5 mx-auto" style="height: 200px; background: white url(img/exist-logos.svg) center no-repeat; background-size: contain"></div>
+        </div>
         <footer class="footer pt-4 my-md-5 pt-md-5 border-top">
             <div class="row">
                 <!-- <div class="col-6 col-md"> -->
