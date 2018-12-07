@@ -3,6 +3,7 @@
 
 ./build.sh
 ls -l css
+cat css/rev-manifest.json
 grep min.css index.html
 
 git_sha="$(git rev-parse --short HEAD)"
