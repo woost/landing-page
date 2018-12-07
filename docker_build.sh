@@ -2,6 +2,7 @@
 # set -e
 
 ./build.sh
+ls -l css
 grep min.css index.html
 
 git_sha="$(git rev-parse --short HEAD)"
