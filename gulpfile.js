@@ -5,8 +5,8 @@ var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var pkg = require('./package.json');
-const rev = require('gulp-rev');
-const revRewrite = require('gulp-rev-rewrite');
+// const rev = require('gulp-rev');
+// const revRewrite = require('gulp-rev-rewrite');
 
 // Set the banner content
 var banner = ['/*!\n',
@@ -19,7 +19,7 @@ var banner = ['/*!\n',
 
 // Compiles SCSS files from /scss into /css
 gulp.task('sass', function() {
-  return gulp.src('scss/landing-page.scss')
+  return gulp.src('scss/landing-page*.scss')
     .pipe(sass())
     .pipe(header(banner, {
       pkg: pkg
@@ -32,7 +32,7 @@ gulp.task('sass', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['sass'], function() {
-  return gulp.src('css/landing-page.css')
+  return gulp.src('css/landing-page*.css')
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
@@ -83,23 +83,23 @@ gulp.task('copy', function() {
     .pipe(gulp.dest('vendor/simple-line-icons/css'))
 })
 
-gulp.task('rev', ['minify-css'], function () {
-    // add hash to css filenames
-    gulp.src('css/*.css')
-        .pipe(rev())
-        .pipe(rev.manifest())
-        .pipe(gulp.dest('css'))
+// gulp.task('rev', ['minify-css'], function () {
+//     // add hash to css filenames
+//     gulp.src('css/*.css')
+//         .pipe(rev())
+//         .pipe(rev.manifest())
+//         .pipe(gulp.dest('css'))
 
-    // replace hashed filenames in other files
-    const cssRenameManifest = gulp.src('css/rev-manifest.json')
-    gulp.src('index.html', {base: "./"}) // base allows to overwrite file
-        .pipe(revRewrite({manifest: cssRenameManifest}))
-        .pipe(gulp.dest('./'))
+//     // replace hashed filenames in other files
+//     const cssRenameManifest = gulp.src('css/rev-manifest.json')
+//     gulp.src('index.html', {base: "./"}) // base allows to overwrite file
+//         .pipe(revRewrite({manifest: cssRenameManifest}))
+//         .pipe(gulp.dest('./'))
 
-})
+// })
 
 // Default task
-gulp.task('default', ['sass', 'minify-css', 'copy', 'rev']);
+gulp.task('default', ['sass', 'minify-css', 'copy']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
