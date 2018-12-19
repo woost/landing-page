@@ -32,7 +32,7 @@ gulp.task('sass', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['sass'], function() {
-  return gulp.src('css/landing-page*.css')
+  return gulp.src('css/!(*.min).css')
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
